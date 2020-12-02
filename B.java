@@ -1,4 +1,4 @@
-¼öÁ¤µÇ¾î¶ó ¾å
+ì‚¬ì´íŠ¸ì—ì„œ ìˆ˜ì •í•´ë³´ì ì– 
 
 package dh.ui.test;
 
@@ -27,42 +27,42 @@ class B extends JFrame {
 		cp = getContentPane();
 		cp.add(laImg);
  
-        laFont.setText("Ãã Ãß´Â ¾ÆÀÌµé");
+        laFont.setText("ì¶¤ ì¶”ëŠ” ì•„ì´ë“¤");
 		cp.add(laFont, BorderLayout.NORTH);
 
 	    setUI();
 	}
 	void setLaImg(){
-		//(1) Icon ¼ÂÆÃ
+		//(1) Icon ì…‹íŒ…
 		laImg.setIcon(ii);
 
-		//(2) Font ¼ÂÆÃ 
-		laFont.setFont(new Font("±Ã¼­Ã¼", Font.BOLD, 30));
+		//(2) Font ì…‹íŒ… 
+		laFont.setFont(new Font("ê¶ì„œì²´", Font.BOLD, 30));
 		//laFont.setHorizontalAlignment(JLabel.RIGHT); 
 		laFont.setHorizontalAlignment(JLabel.CENTER); //LEFT(default), CENTER, RIGHT
 		//laFont.setVerticalAlignment(JLabel.BOTTOM); //TOP, CENTER(default), BOTTOM
 
-        //(3) Border ¼ÂÆÃ 
+        //(3) Border ì…‹íŒ… 
 		Border oborder = laFont.getBorder();
 		Border eBorder = new EmptyBorder(20, 10, 20, 10);
 		CompoundBorder cBorder = new CompoundBorder(oborder, eBorder);
 		laFont.setBorder(cBorder);
 	}
 	void loadImg(){
-		//¹æ¹ı1
+		//ë°©ë²•1
 		/*try{
 			File f = new File("imgs/dance.gif");
 			BufferedImage bi = ImageIO.read(f);
 			ii = new ImageIcon(bi);
 		}catch(IOException ie){
-			pln("ÀÌ¹ÌÁö¸¦ ¸ø Ã£À½");
+			pln("ì´ë¯¸ì§€ë¥¼ ëª» ì°¾ìŒ");
 		}*/
 
-        //¹æ¹ı2
+        //ë°©ë²•2
 		ii = new ImageIcon(getClass().getResource("imgs\\dances.gif")); 
 	}
 	void setUI(){
-		setTitle("¿òÁ÷ÀÌ´Â gif");
+		setTitle("ì›€ì§ì´ëŠ” gif");
 		pack();
 		setVisible(true);
 		//setLocation(300, 100);
